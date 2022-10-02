@@ -58,20 +58,7 @@
 			{
 				"name": "DeltaCopy",
 				"type": "Copy",
-				"dependsOn": [
-					{
-						"activity": "PreviousWaterMark",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					},
-					{
-						"activity": "NewWaterMark",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
+				"dependsOn": [],
 				"policy": {
 					"timeout": "0.12:00:00",
 					"retry": 0,
