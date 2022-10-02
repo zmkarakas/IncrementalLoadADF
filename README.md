@@ -8,7 +8,7 @@ AND
 LastModifiedTime <= '@{activity('NewWaterMark').output.firstrow.WatermarkValue}';
 
 
-Trigger1 is a schedule trigger that runs everyday. 
+Trigger1 is a schedule trigger that runs everyday. For this to work, in Azure SQL, there must be a stored procedure to update the Watermark table everytime there is a new data hitting the FactTrips table.
 
 ![image](https://user-images.githubusercontent.com/50174304/193459409-bf22a7e5-e276-4050-96c7-69dcc0df04b7.png)
 
