@@ -12,3 +12,16 @@ Trigger1 is a schedule trigger that runs everyday.
 
 ![image](https://user-images.githubusercontent.com/50174304/193459409-bf22a7e5-e276-4050-96c7-69dcc0df04b7.png)
 
+Sample Data as below:
+
+CREATE TABLE FactTrips (
+[TripID] INT,
+[CustomerID] INT,
+[LastModifiedTime] DATETIME2
+);
+
+INSERT INTO [dbo].[FactTrips] VALUES (100, 200, CURRENT_TIMESTAMP);
+INSERT INTO [dbo].[FactTrips] VALUES (101, 201, CURRENT_TIMESTAMP);
+INSERT INTO [dbo].[FactTrips] VALUES (102, 202, CURRENT_TIMESTAMP);
+INSERT INTO [dbo].[FactTrips] VALUES (103, 203, CURRENT_TIMESTAMP);
+INSERT INTO [dbo].[FactTrips] VALUES (103, 203, CURRENT_TIMESTAMP);
