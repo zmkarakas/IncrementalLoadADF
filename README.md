@@ -6,3 +6,6 @@ SELECT * FROM FactTrips WHERE
 LastModifiedTime > '@{activity('PreviousWaterMark').output.firstrow.WatermarkValue}'
 AND
 LastModifiedTime <= '@{activity('NewWaterMark').output.firstrow.WatermarkValue}';
+
+
+Trigger1 is a schedule trigger that runs everyday. 
